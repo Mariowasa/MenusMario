@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Desplegable</title>
+    <link rel="stylesheet" href="css/estils.css">
+    <style>
+        .menu-desplegable {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        .menu-desplegable li {
+            display: inline-block;
+            position: relative;
+            margin: 10px;
+        }
+        .menu-desplegable li a {
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            background-color: #bbb;
+            color: black;
+        }
+        .submenu {
+            display: none;
+            position: absolute;
+            left: 0;
+            background-color: #ddd;
+            width: 150px;
+            text-align: left;
+        }
+        .submenu li {
+            display: block;
+        }
+        .menu-desplegable li:hover .submenu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Menú Desplegable</h1>
+    </header>
+    <nav>
+        <ul class="menu-desplegable">
+            <li><a href="index.html">Inici</a></li>
+            <li>
+                <a href="#">Edita</a>
+                <ul class="submenu">
+                    <li><a href="#">Nou</a></li>
+                    <li><a href="#">Obre...</a></li>
+                    <li><a href="#">Desa</a></li>
+                </ul>
+            </li>
+            <li>
+            <a href="#">Vista</a>
+                <ul class="submenu">
+                    <li><a href="#">Eines</a></li>
+                    <li><a href="#">Estat</a></li>
+                    <li><a href="#">Lateral</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contacte</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Aquesta és la pàgina amb el menú desplegable.</p>
+    </main>
+    <footer>
+        <p> Mario Figueres 2025</p>
+    </footer>
+</body>
+</html>
